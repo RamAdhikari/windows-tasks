@@ -1,7 +1,30 @@
 {
   "puppet_task_version": 1,
   "supports_noop": false,
-  "description": "A short description of this task",
+  "description": "Task to remove a specified service and dependencies",
   "parameters": {
+     "service": {
+         "type": "String",
+         "description": "Name of the service"
+     },
+     "process": {
+      "type": "Optional[String]",
+      "description": "Name of the process"
+  },
+      "directorypath": {
+      "type": "Optional[String]",
+      "description": "Name of the directory"
+  },
+      "registrypath": {
+      "type": "Optional[String]",
+      "description": "Name of the registry"
+  },
+      "debug": {
+      "type": "Optional[String]",
+      "description": "Debug flag"
   }
-}
+  },
+  "implementations": [
+      {"name": "removewinService.ps1", "requirements":["powershell"]}
+  ]
+  }
