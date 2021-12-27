@@ -3,10 +3,6 @@
   "supports_noop": false,
   "description": "Task to Add Registry Entry",
   "parameters": {
-     "regkeypath": {
-         "type": "String",
-         "description": "Registry Key Path"
-     },
     "regkeyname": {
       "type": "String",
       "description": "Name of the the Registry Key"
