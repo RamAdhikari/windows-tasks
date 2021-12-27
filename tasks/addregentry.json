@@ -7,12 +7,12 @@
          "type": "String",
          "description": "Registry Key Path"
      },
-     "regkeyname": {
-      "type": "[String]",
+    "regkeyname": {
+      "type": "String",
       "description": "Name of the the Registry Key"
   },
-      "regkeyvalue": {
-      "type": "[String]",
+    "regkeyvalue": {
+      "type": "String",
       "description": "Value of Registry Key"
       }
    
