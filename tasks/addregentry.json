@@ -1,0 +1,23 @@
+{
+  "puppet_task_version": 1,
+  "supports_noop": false,
+  "description": "Task to Add Registry Entry",
+  "parameters": {
+     "regkeypath": {
+         "type": "String",
+         "description": "Registry Key Path"
+     },
+     "regkeyname": {
+      "type": "[String]",
+      "description": "Name of the the Registry Key"
+  },
+      "regkeyvalue": {
+      "type": "[String]",
+      "description": "Value of Registry Key"
+      }
+   
+  },
+  "implementations": [
+      {"name": "addregentry.ps1", "requirements":["powershell"]}
+  ]
+  }
