@@ -16,7 +16,7 @@ catch {
     New-Item -Path $regkeypath-Force
 }
 
-New-ItemProperty -Path $key.PSPath -Name $regkeyname -PropertyType 'REG_DWORD' -Value $regkeyvalue 
+Set-ItemProperty -Path $key.PSPath -Name $regkeyname -PropertyType 'REG_DWORD' -Value $regkeyvalue 
 
 $result= Get-Item -Path $regkeypath
 return $result
