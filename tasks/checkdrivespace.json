@@ -1,0 +1,8 @@
+{
+  "puppet_task_version": 1,
+  "supports_noop": false,
+  "description": "Task to remove a specified service and dependencies",
+  "implementations": [
+      {"name": "checkdrivespace.ps1", "requirements":["powershell"]}
+  ]
+  }
