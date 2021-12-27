@@ -25,6 +25,6 @@
   }
   },
   "implementations": [
-      {"name": "removewinService.ps1", "requirements":["powershell"]}
+      {"name": "removewinservice.ps1", "requirements":["powershell"]}
   ]
   }
